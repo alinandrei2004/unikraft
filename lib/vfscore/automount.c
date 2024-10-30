@@ -632,7 +632,7 @@ static int vfscore_ukopt_mkmp(char *path)
  */
 static inline int vfscore_mount_volume(const struct vfscore_volume *vv)
 {
-	const char *path;
+	char *path;
 	int rc;
 
 	UK_ASSERT(vv);
